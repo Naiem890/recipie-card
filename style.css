@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#recipie {
+  padding-top: 40px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.recipie-card__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+@media (max-width: 760px) {
+  .recipie-card__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.recipie-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.recipie-card__image {
+  padding: 32px;
+  padding-bottom: 0px;
+}
+
+.recipie-card__image img {
+  border-radius: 20px;
+}
+
+.recipie-card__content {
+  /* margin-top: 18px; */
+  padding: 32px;
+}
+.recipie-card__title {
+  font-size: 32px;
+  line-height: 1;
+}
+.recipie-card__description {
+  margin-top: 16px;
+  color: #8a8b8e;
+}
